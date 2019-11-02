@@ -1,2 +1,2 @@
 # template-
-zaklad pro v3echno
+zaklad pro vsechno
