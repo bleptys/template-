@@ -8,43 +8,45 @@
 </head>
 <body>
 
-<table id="tab" name="tab">
-<thead id="the" name="the">
-<tr>
-<th>q</th>
-<th>w</th>
-<th>e</th>
-<th>r</th>
-<th>t</th>
-<th>y</th>
-</tr>
-</thead>
+<form action=" " id="myform">
+<fieldset>
+<legend>Bar</legend>
+</br>
+<label>jedna</label><input type="number" value="1" name="inp" onclick="calculateTotal()"/>
+<label>dva</label><input type="number" value="2" name="inp" onclick="calculateTotal()">
+<label>tri</label><input type="number" value="3" name="inp" onclick="calculateTotal()">
+<label>ctyri</label><input type="number" value="4" name="inp" onclick="calculateTotal()">
+<label>pet</label><input type="number" value="5" name="inp" onclick="calculateTotal()">
+<label>sest</label><input type="number" value="6" name="inp" onclick="calculateTotal()">
 
-<tbody id="tbo" name="tbo">
-
-<tr id="trone" name="trone">
-<td><input type="number" value="1" name="inp"></td>
-<td><input type="number" value="2" name="inp"></td>
-<td><input type="number" value="3" name="inp"></td>
-<td><input type="number" value="4" name="inp"></td>
-<td><input type="number" value="5" name="inp"></td>
-<td><input type="number" value="6" name="inp"></td>
-</tr>
-
-<tr id="trtwo" name="trtwo">
-<td><input type="number" value="11" name="inp"></td>
-<td><input type="number" value="22" name="inp"></td>
-<td><input type="number" value="33" name="inp"></td>
-<td><input type="number" value="44" name="inp"></td>
-<td><input type="number" value="55" name="inp"></td>
-<td><input type="number" value="66" name="inp"></td>
-</tr>
-
-</tbody>
-</table>
+<label>jedenact</label><input type="number" value="11" name="inp" onclick="calculateTotal()">
+<label>dvacetdva</label><input type="number" value="22" name="inp" onclick="calculateTotal()">
+<label>tricettri</label><input type="number" value="33" name="inp" onclick="calculateTotal()">
+<label>ctyricetctyri</label><input type="number" value="44" name="inp" onclick="calculateTotal()">
+<label>padesatpet</label><input type="number" value="55" name="inp" onclick="calculateTotal()">
+<label>sedesatsest</label><input type="number" value="66" name="inp" onclick="calculateTotal()">
+</fieldset>
+</form>
 <p><button type="button" function="fun()">klik</button></p>
 
 <script>
+
+function getfun()
+{
+    //Převzít formu s id="myform"
+    var myform = document.forms["myform"];
+    //Získat odkaz na inp
+    var inp = myform.elements["inp"];
+    var howmany =0;
+    //Pokud textové pole není prázdné
+    if(inp.value!="")
+    {
+        howmany = parseInt(inp.value);
+    }
+return howmany;
+}
+name = myform.elements["name"].value;
+
 
 </script>
 
